@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+.Intro {
+  display: flex;
+  display: center;
+  align-items: center;
+  font-family: "Rubik", sans-serif;
+  /* height: 100vh; */
+}
+
+div {
+  font-family: "Rubik", sans-serif;
+}
+
+/* left side styling */
+.i-left {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Rubik", sans-serif;
+  /* height: 100vh; */
+}
+
+.i-name {
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: "Rubik", sans-serif;
+  flex-direction: column;
+  /* margin-bottom: 30px; */
+}
+
+.i-name> :nth-child(1) {
+  font-family: "Rubik", sans-serif;
+  color: var(--black);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name> :nth-child(2) {
+  font-family: "Rubik", sans-serif;
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.i-name> :nth-child(3) {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  color: var(--gray);
+  margin-top: 10px;
+}
+
+.i-button {
+  font-family: "Rubik", sans-serif;
+  width: 6rem;
+  height: 2rem;
+  margin-right: 10px;
+}
+
+.i-button:last-child {
+  font-family: "Rubik", sans-serif;
+  width: 8rem;
+}
+
+.i-icons {
+  font-family: "Rubik", sans-serif;
+  margin-top: 15rem;
+  display: flex;
+  gap: 0rem;
+}
+
+.i-icons>* {
+  font-family: "Rubik", sans-serif;
+  transform: scale(0.5);
+}
+
+.i-icons>*:hover {
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+}
+
+.btn-modal {
+  font-family: "Rubik", sans-serif;
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  font-family: "Rubik", sans-serif;
+  width: 100vw;
+  height: 120vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+  font-family: "Rubik", sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  width: 80%;
+  height: 60%;
+  border: solid 2px #fdc50f;
+  border-radius: 6px;
+  /* max-width: 600px;
+  min-width: 300px; */
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+#modal-form {
+  height: 45%;
+  width: 100%;
+}
+
+#modal-feedback {
+  resize: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+}
+
+#modal-submit {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+}
+
+#modal-submit:hover {
+  margin-bottom: 2px;
+  transition: 0 0;
+}
+
+/* right side styling */
+.i-right {
+  flex: 1;
+}
+
+.slogan {
+  margin-left: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* .i-right > * {
+  position: absolute;
+  z-index: 1;
+} */
+/* 
+.i-right > :nth-child(1) {
+  transform: scale(0.69);
+  left: -15%;
+  top: -9%;
+}
+.i-right > :nth-child(2) {
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: -3rem;
+}
+.i-right > :nth-child(3) {
+  transform: scale(1.4);
+  left: 28%;
+}
+.i-right > :nth-child(4) {
+  transform: scale(0.62);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+} */
+
+/* blur */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: -9;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+.myschedule-modal-input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1rem;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  margin-bottom: 15px;
+  font-family: "Rubik", sans-serif;
+}
+
+button {
+  margin-top: 10px;
+  width: auto;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:hover {
+  /* color: whitesmoke; */
+  background-color: #2c974b;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+  -webkit-transform: translate(5px, 5px);
+  transform: translate(5px, 5px);
+}
+
+button:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
+  .Intro {
+    flex-direction: column;
+    gap: 1rem;
+    /* height: 90vh; */
+  }
+
+  .i-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+
+  .i-right .blur {
+    display: none;
+  }
+
+  .floating-div:nth-of-type(1) {
+    /* display: none; */
+    top: -7rem !important;
+  }
+
+  .i-button {
+    margin-right: 100px;
+    margin-bottom: 20px;
+  }
+}
